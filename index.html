@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre Barcode 39"
+      rel="stylesheet"
+    />
+    <style>
+      @page {
+        margin: 20px;
+      }
+      * {
+        font-family: Helvetica, sans-serif;
+        font-size: 11px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      .container {
+        display: flex;
+        height: 265px;
+      }
+
+      .order-info {
+        writing-mode: vertical-lr;
+      }
+      .header {
+        display: flex;
+      }
+
+      .tables {
+        display: flex;
+      }
+
+      .tables table {
+        height: 230px;
+        width: 750px;
+      }
+
+      .bank-name {
+        padding-right: 12px;
+      }
+
+      .bank-number {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .items-wrapper {
+        border: 1px solid black;
+      }
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        padding: 4px;
+        border-bottom: 1px solid black;
+      }
+
+      .item div {
+        font-size: 11px;
+      }
+
+      .bar-code {
+        font-family: "Libre Barcode 39";
+        font-size: 26px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="order-info">
+        <strong>Pedido 07281358</strong>
+        <div>Realizado 11/26/20</div>
+      </div>
+      <div>
+        <div class="header">
+          <div class="bank-name">Bradesco</div>
+          <div class="bank-number">237</div>
+          <div>23791.22928 60007.211695 75000.046906 3 85130000007990</div>
+        </div>
+        <div class="tables">
+          <table>
+            <tr>
+              <td colspan="5">
+                Local de pagamento<br />
+                PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO.
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5">
+                Benefiniciário<br />
+                Varejo Integrado | Pagar.me Pagamentos S/A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Data do Documento<br />
+                11/26/20
+              </td>
+              <td>
+                No documento<br />
+                72116975
+              </td>
+              <td>
+                Espécia doc.<br />
+                DM
+              </td>
+              <td>
+                Aceite<br />
+                N
+              </td>
+              <td>
+                Data processamento<br />
+                11/26/20
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                Pagador<br />
+                Leonardo<br />
+                leonardo.cadastro@varejointegrado.com.br<br />
+                cpf: 39915886845<br />
+              </td>
+              <td colspan="2">
+                Instruções<br />
+                Após 01/27/21 juros por dia atrasado: R$ R$ 0,10<br />
+                Após 01/27/21 Multa R$ R$ 5,00 <br />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5" class="bar-code">
+                23791.22928 60007.211695 75000.046906 3 85130000007990
+              </td>
+            </tr>
+          </table>
+          <div class="items-wrapper">
+            <div class="item">
+              <div>Vencimento</div>
+              <div>01/27/21</div>
+            </div>
+            <div class="item">
+              <div>Agência / Código beneficiário</div>
+              <div>1229/469</div>
+            </div>
+            <div class="item">
+              <div>Carteira / Nosso número</div>
+              <div>000072116975</div>
+            </div>
+            <div class="item">
+              <div>(=) Valor documento</div>
+              <div>R$ R$ 79,90</div>
+            </div>
+            <div class="item">
+              <div>(-) Desconto / Abatimentos</div>
+              <div></div>
+            </div>
+            <div class="item">
+              <div>(-) Outras deduções</div>
+              <div></div>
+            </div>
+            <div class="item">
+              <div>(+) Mora / Multa</div>
+              <div></div>
+            </div>
+            <div class="item">
+              <div>(+) Outros acréscimos</div>
+              <div></div>
+            </div>
+            <div class="item">
+              <div>(=) Valor Cobrado</div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
